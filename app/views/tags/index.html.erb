@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tags</h1>
+
+<table id="tab">
+  <thead>
+    <tr>
+      <th>Codicetelecomando</th>
+      <th>Cognome nome assegnatario</th>
+      <th>Data</th>
+      <th>Serial number</th>
+      <th>Internal sn</th>
+      <th>Data setup agg firmware</th>
+      <th>Data attivazione</th>
+      <th>Data disattivazione</th>
+      <th>Stato</th>
+      <th>Data sostituzione</th>
+      <th>Sostituito da</th>
+      <th>Note</th>
+      <th ></th>
+      
+      <th ></th>
+      <th ></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tags.each do |tag| %>
+      <tr>
+        <td><%= tag.codicetelecomando %></td>
+        <td><%= tag.cognome_nome_assegnatario %></td>
+        <td><%= tag.data %></td>
+        <td><%= tag.serial_number %></td>
+        <td><%= tag.internal_sn %></td>
+        <td><%= tag.data_setup_agg_firmware %></td>
+        <td><%= tag.data_attivazione %></td>
+        <td><%= tag.data_disattivazione %></td>
+        <td><%= tag.stato %></td>
+        <td><%= tag.data_sostituzione %></td>
+        <td><%= tag.sostituito_da %></td>
+        <td><%= tag.note %></td>
+        <td><%= link_to 'Show', tag %></td>
+        <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
+        <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tag', new_tag_path %>
+<script>
+  $(document).ready( function () {
+    $('#tab').DataTable();
+} );
+  
+</script>

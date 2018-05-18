@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codicetelecomando: MyString
+  cognome_nome_assegnatario: MyText
+  data: 2018-04-18 09:23:37
+  serial_number: MyString
+  internal_sn: MyString
+  data_setup_agg_firmware: 2018-04-18 09:23:37
+  data_attivazione: 2018-04-18 09:23:37
+  data_disattivazione: 2018-04-18 09:23:37
+  stato: MyString
+  data_sostituzione: MyString
+  sostituito_da: MyString
+  note: MyText
+
+two:
+  codicetelecomando: MyString
+  cognome_nome_assegnatario: MyText
+  data: 2018-04-18 09:23:37
+  serial_number: MyString
+  internal_sn: MyString
+  data_setup_agg_firmware: 2018-04-18 09:23:37
+  data_attivazione: 2018-04-18 09:23:37
+  data_disattivazione: 2018-04-18 09:23:37
+  stato: MyString
+  data_sostituzione: MyString
+  sostituito_da: MyString
+  note: MyText
